@@ -1,0 +1,4 @@
+﻿  laser.cpp
+c:\users\dan\documents\visual studio 2015\projects\project_moon_lander\project_moon_lander\laser.cpp(184): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  project_moon_lander.vcxproj -> C:\Users\Dan\Documents\Visual Studio 2015\Projects\project_moon_lander\Debug\project_moon_lander.exe
+  project_moon_lander.vcxproj -> C:\Users\Dan\Documents\Visual Studio 2015\Projects\project_moon_lander\Debug\project_moon_lander.pdb (Partial PDB)

@@ -1,0 +1,50 @@
+/*****************************************************
+ * File: Driver.cpp
+ * Author: Br. Burton
+ *
+ * Description: This file contains the main function
+ *  that starts the game and the callback function
+ *  that specifies what methods of the game class are
+ *  called each time through the game loop.
+ ******************************************************/
+#include "game.h"
+#include "uiInteract.h"
+
+#define MIN_X -400
+#define MAX_X  400
+#define MIN_Y -500
+#define MAX_Y  500
+
+/*************************************
+ * All the interesting work happens here, when
+ * I get called back from OpenGL to draw a frame.
+ * When I am finished drawing, then the graphics
+ * engine will wait until the proper amount of
+ * time has passed and put the drawing on the screen.
+ **************************************/
+void callBack(const Interface *pUI, void *p)
+{
+   Game *pGame = (Game *)p;
+   
+   pGame->advance();
+   pGame->handleInput(*pUI);
+   pGame->draw(*pUI);
+}
+
+
+/*********************************
+ * Main is pretty sparse.  Just initialize
+ * the game and call the display engine.
+ * That is all!
+ *********************************/
+int main(int argc, char ** argv)
+{
+   Point topLeft(MIN_X, MAX_Y);
+   Point bottomRight(MAX_X, MIN_Y);
+   
+   Interface ui(argc, argv, "Moon Lander", topLeft, bottomRight);
+   Game game(topLeft, bottomRight);
+   ui.run(callBack, &game);
+   
+   return 0;
+}

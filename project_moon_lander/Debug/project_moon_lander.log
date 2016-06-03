@@ -1,0 +1,10 @@
+﻿  my_math.cpp
+c:\users\dan\documents\visual studio 2015\projects\project_moon_lander\project_moon_lander\my_math.cpp(16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\dan\documents\visual studio 2015\projects\project_moon_lander\project_moon_lander\my_math.cpp(17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  alien.cpp
+c:\users\dan\documents\visual studio 2015\projects\project_moon_lander\project_moon_lander\alien.cpp(65): warning C4018: '<': signed/unsigned mismatch
+c:\users\dan\documents\visual studio 2015\projects\project_moon_lander\project_moon_lander\alien.cpp(83): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\dan\documents\visual studio 2015\projects\project_moon_lander\project_moon_lander\alien.cpp(87): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  project_moon_lander.vcxproj -> C:\Users\Dan\Documents\Visual Studio 2015\Projects\project_moon_lander\Debug\project_moon_lander.exe
+  project_moon_lander.vcxproj -> C:\Users\Dan\Documents\Visual Studio 2015\Projects\project_moon_lander\Debug\project_moon_lander.pdb (Partial PDB)
